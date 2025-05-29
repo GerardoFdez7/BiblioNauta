@@ -8,16 +8,18 @@ datasource db {
 }
 
 model Usuario {
-  id           Int       @id @default(autoincrement())
-  nombre       String
-  email        String    @unique
-  telefono     String?
-  direccion    String?
-  tipo         TipoUsuario @default(ESTUDIANTE)
-  prestamos    Prestamo[]
-  reservas     Reserva[]
-  multas       Multa[]
-  createdAt    DateTime  @default(now())
+  id          Int               @id @default(autoincrement())
+  nombre      String
+  email       String            @unique
+  telefono    String?
+  direccion   String?
+  tipo        TipoUsuario       @default(ESTUDIANTE)
+  prestamos   Prestamo[]
+  reservas    Reserva[]
+  multas      Multa[]
+  sugerencias SugerenciaLibro[]
+  accesos     HistorialAcceso[]
+  createdAt   DateTime          @default(now())
 }
 
 enum TipoUsuario {
@@ -28,54 +30,55 @@ enum TipoUsuario {
 }
 
 model Libro {
-  id             Int            @id @default(autoincrement())
-  titulo         String
-  isbn           String         @unique
+  id              Int          @id @default(autoincrement())
+  titulo          String
+  isbn            String       @unique
   anioPublicacion Int
-  editorialId    Int
-  editorial      Editorial      @relation(fields: [editorialId], references: [id])
-  categoriaId    Int
-  categoria      Categoria      @relation(fields: [categoriaId], references: [id])
-  autores        LibroAutor[]
-  ejemplares     Ejemplar[]
-  createdAt      DateTime       @default(now())
+  editorialId     Int
+  editorial       Editorial    @relation(fields: [editorialId], references: [id])
+  categoriaId     Int
+  categoria       Categoria    @relation(fields: [categoriaId], references: [id])
+  autores         LibroAutor[]
+  ejemplares      Ejemplar[]
+  createdAt       DateTime     @default(now())
 }
 
 model Editorial {
-  id        Int      @id @default(autoincrement())
-  nombre    String
-  pais      String?
-  libros    Libro[]
+  id     Int     @id @default(autoincrement())
+  nombre String
+  pais   String?
+  libros Libro[]
 }
 
 model Categoria {
-  id        Int      @id @default(autoincrement())
-  nombre    String
+  id          Int     @id @default(autoincrement())
+  nombre      String
   descripcion String?
-  libros    Libro[]
+  libros      Libro[]
 }
 
 model Autor {
-  id        Int      @id @default(autoincrement())
-  nombre    String
+  id           Int          @id @default(autoincrement())
+  nombre       String
   nacionalidad String?
-  libros    LibroAutor[]
+  libros       LibroAutor[]
 }
 
 model LibroAutor {
-  libroId   Int
-  autorId   Int
-  libro     Libro   @relation(fields: [libroId], references: [id])
-  autor     Autor   @relation(fields: [autorId], references: [id])
+  libroId Int
+  autorId Int
+  libro   Libro @relation(fields: [libroId], references: [id])
+  autor   Autor @relation(fields: [autorId], references: [id])
+
   @@id([libroId, autorId])
 }
 
 model Ejemplar {
-  id        Int     @id @default(autoincrement())
-  codigo    String  @unique
+  id        Int            @id @default(autoincrement())
+  codigo    String         @unique
   estado    EstadoEjemplar @default(DISPONIBLE)
   libroId   Int
-  libro     Libro   @relation(fields: [libroId], references: [id])
+  libro     Libro          @relation(fields: [libroId], references: [id])
   prestamos Prestamo[]
   reservas  Reserva[]
 }
@@ -88,42 +91,42 @@ enum EstadoEjemplar {
 }
 
 model Prestamo {
-  id          Int       @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   usuarioId   Int
   ejemplarId  Int
   fechaInicio DateTime
   fechaFin    DateTime
-  devuelto    Boolean   @default(false)
-  usuario     Usuario   @relation(fields: [usuarioId], references: [id])
-  ejemplar    Ejemplar  @relation(fields: [ejemplarId], references: [id])
+  devuelto    Boolean  @default(false)
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id])
+  ejemplar    Ejemplar @relation(fields: [ejemplarId], references: [id])
   multa       Multa?
 }
 
 model Reserva {
-  id          Int       @id @default(autoincrement())
-  usuarioId   Int
-  ejemplarId  Int
-  fecha       DateTime  @default(now())
-  usuario     Usuario   @relation(fields: [usuarioId], references: [id])
-  ejemplar    Ejemplar  @relation(fields: [ejemplarId], references: [id])
+  id         Int      @id @default(autoincrement())
+  usuarioId  Int
+  ejemplarId Int
+  fecha      DateTime @default(now())
+  usuario    Usuario  @relation(fields: [usuarioId], references: [id])
+  ejemplar   Ejemplar @relation(fields: [ejemplarId], references: [id])
 }
 
 model Multa {
-  id         Int       @id @default(autoincrement())
+  id         Int      @id @default(autoincrement())
   monto      Float
-  pagada     Boolean   @default(false)
-  prestamoId Int       @unique
+  pagada     Boolean  @default(false)
+  prestamoId Int      @unique
   usuarioId  Int
-  prestamo   Prestamo  @relation(fields: [prestamoId], references: [id])
-  usuario    Usuario   @relation(fields: [usuarioId], references: [id])
+  prestamo   Prestamo @relation(fields: [prestamoId], references: [id])
+  usuario    Usuario  @relation(fields: [usuarioId], references: [id])
 }
 
 model Empleado {
-  id         Int      @id @default(autoincrement())
-  nombre     String
-  puesto     String
-  email      String   @unique
-  horario    Horario?
+  id      Int      @id @default(autoincrement())
+  nombre  String
+  puesto  String
+  email   String   @unique
+  horario Horario?
 }
 
 model Horario {
@@ -133,4 +136,31 @@ model Horario {
   horaInicio String
   horaFin    String
   empleado   Empleado @relation(fields: [empleadoId], references: [id])
+}
+
+model SugerenciaLibro {
+  id        Int              @id @default(autoincrement())
+  titulo    String
+  autor     String
+  editorial String?
+  motivo    String
+  usuarioId Int
+  usuario   Usuario          @relation(fields: [usuarioId], references: [id])
+  estado    EstadoSugerencia @default(PENDIENTE)
+  createdAt DateTime         @default(now())
+}
+
+enum EstadoSugerencia {
+  PENDIENTE
+  ACEPTADA
+  RECHAZADA
+}
+
+model HistorialAcceso {
+  id        Int      @id @default(autoincrement())
+  usuarioId Int
+  usuario   Usuario  @relation(fields: [usuarioId], references: [id])
+  fechaHora DateTime @default(now())
+  accion    String
+  ip        String?
 }
