@@ -36,6 +36,6 @@ npm run dev
 ## API Documentation
 
 Explore the API endpoints using our Postman collection:
-[BiblioNauta Postman Collection](https://universal-trinity-319957.postman.co/workspace/Rutas-Control-Comercial~03feaf0c-efa7-437c-b3e8-ec17647d833b/collection/19281513-0a612228-e94e-4120-b567-701b3a4bc5b9?action=share&creator=19281513&active-environment=19281513-d4ca6da2-e887-4319-be7e-7f6e0e22bdb8)
+<a href="https://universal-trinity-319957.postman.co/workspace/03feaf0c-efa7-437c-b3e8-ec17647c-b3e8-ec17647d833b/documentation/19281513-0a612228-e94e-4120-b567-701b3a4bc5b9" target="_blank">BiblioNauta Postman Collection</a>
 
 Enjoy exploring and managing books with BiblioNauta!
