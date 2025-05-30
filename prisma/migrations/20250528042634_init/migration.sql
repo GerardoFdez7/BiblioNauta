@@ -356,3 +356,60 @@ BEGIN
     WHERE E.nombre ILIKE '%' || editorial_nombre_param || '%';
 END;
 $$ LANGUAGE plpgsql;
+
+
+-- Función para trigger
+CREATE OR REPLACE FUNCTION actualizar_estado_prestamo()
+RETURNS TRIGGER AS $$
+BEGIN
+  UPDATE "Prestamo"
+  SET "devuelto" = TRUE
+  WHERE id = NEW."prestamoId";
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger que llama la función
+CREATE TRIGGER trigger_actualizar_estado_prestamo
+AFTER INSERT ON "Multa"
+FOR EACH ROW
+EXECUTE FUNCTION actualizar_estado_prestamo();
+
+
+-- Función del trigger
+CREATE OR REPLACE FUNCTION fn_marcar_ejemplar_prestado()
+RETURNS TRIGGER AS $$
+BEGIN
+    UPDATE "Ejemplar"
+    SET estado = 'PRESTADO'
+    WHERE id = NEW."ejemplarId";
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger 2
+CREATE TRIGGER trg_prestamo_actualiza_ejemplar
+AFTER INSERT ON "Prestamo"
+FOR EACH ROW
+EXECUTE FUNCTION fn_marcar_ejemplar_prestado();
+
+-- Función del trigger
+CREATE OR REPLACE FUNCTION fn_set_createdAt_libro()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW."createdAt" IS NULL THEN
+        NEW."createdAt" := NOW();
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger 3
+CREATE TRIGGER trg_set_createdAt_libro
+BEFORE INSERT ON "Libro"
+FOR EACH ROW
+EXECUTE FUNCTION fn_set_createdAt_libro();
+
+
+
+
