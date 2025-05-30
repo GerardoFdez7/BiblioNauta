@@ -36,6 +36,6 @@ npm run dev
 ## API Documentation
 
 Explore the API endpoints using our Postman collection:
-<a href="https://universal-trinity-319957.postman.co/workspace/03feaf0c-efa7-437c-b3e8-ec17647c-b3e8-ec17647d833b/documentation/19281513-0a612228-e94e-4120-b567-701b3a4bc5b9" target="_blank">BiblioNauta Postman Collection</a>
+<a href="https://universal-trinity-319957.postman.co/workspace/03feaf0c-efa7-437c-b3e8-ec17647d833b/documentation/19281513-0a612228-e94e-4120-b567-701b3a4bc5b9" target="_blank"> BiblioNauta Postman Collection</a>
 
 Enjoy exploring and managing books with BiblioNauta!
