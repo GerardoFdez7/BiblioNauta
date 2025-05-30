@@ -15,7 +15,13 @@ Follow these steps to set up and run the project locally:
 npm install
 ```
 
-2. Run database migrations:
+2. Configure environment variables:
+```bash
+copy .env.example .env
+```
+  Then, modify the DATABASE_URL in the newly created .env file with your PostgreSQL connection string, ensuring the password is correct.
+
+3. Run database migrations:
 ```bash
 npx prisma migrate dev
 ```
@@ -23,7 +29,7 @@ npx prisma migrate dev
 > [!IMPORTANT]
 > To test the project correctly, you must manually execute the `prisma/data.sql` file using pgAdmin or your preferred PostgreSQL database manager. This step is required to populate the database with users, instructors, workshops, and reservations.
 
-3. Start the development server:
+4. Start the development server:
 ```bash
 npm run dev
 ```
