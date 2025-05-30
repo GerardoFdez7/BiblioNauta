@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.2",
     "@prisma/client": "^6.8.2",
     "next": "15.3.2",
     "prisma": "^6.8.2",
+    "prisma-erd-generator": "^2.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

@@ -7,6 +7,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+generator erd {
+  provider                  = "prisma-erd-generator"
+  output                    = "./erd.svg"
+  theme                     = "default"
+  ignoreEnums               = true
+  includeRelationFromFields = true
+  disabled                  = true
+  tableOnly                 = false
+}
+
 model Usuario {
   id          Int               @id @default(autoincrement())
   nombre      String
