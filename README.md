@@ -3,7 +3,7 @@
 BiblioNauta is a comprehensive web application designed for the management of a library system. It facilitates the administration of books, user accounts, loans, reservations, and penalties. Users can browse available books, manage their loans and reservations, and suggest new books. Administrators have the tools to oversee the entire catalog, user base, and transaction history. The backend is powered by PostgreSQL and Prisma ORM, with a modern frontend built using Next.js and Tailwind CSS.
 
 <div align="center">
-  <img src="prisma/erd.svg" alt="Database ERD" width="600"/>
+  <img src="prisma/erd.svg" alt="Database ERD" width="1200"/>
 </div>
 
 ## Getting Started
