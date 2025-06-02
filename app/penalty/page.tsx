@@ -1,5 +1,7 @@
+import PenaltyTable from "@components/penalty/Penalty";
+
 export default function Home() {
   return (
-    <h1>Penalty</h1>
+    <PenaltyTable />
   );
 }

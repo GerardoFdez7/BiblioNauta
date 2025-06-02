@@ -6,11 +6,27 @@ const prisma = new PrismaClient();
 // GET all penalties
 export async function GET() {
   try {
-    const penalties = await prisma.multa.findMany();
-    return NextResponse.json(penalties);
+    const penalties = await prisma.multa.findMany({
+      include: {
+        usuario: true,
+        prestamo: {
+          include: {
+            ejemplar: true,
+          },
+        },
+      },
+      orderBy: {
+        id: "asc",
+      },
+    });
+
+    return NextResponse.json({
+      success: true,
+      data: penalties,
+    });
   } catch (error) {
     return NextResponse.json(
-      { error: "Error fetching penalties" },
+      { success: false, message: "Error fetching penalties" },
       { status: 500 }
     );
   }
@@ -23,10 +39,19 @@ export async function POST(request: Request) {
     const newPenalty = await prisma.multa.create({
       data: body,
     });
-    return NextResponse.json(newPenalty, { status: 201 });
-  } catch (error) {
     return NextResponse.json(
-      { error: "Error creating penalty" },
+      {
+        success: true,
+        message: "Multa creada exitosamente",
+        data: newPenalty,
+      },
+      { status: 201 }
+    );
+  } catch (error) {
+    console.error("Error creating penalty:", error);
+
+    return NextResponse.json(
+      { success: false, message: "Ya existe una multa con ese código de préstamo" },
       { status: 500 }
     );
   }
@@ -40,7 +65,11 @@ export async function PUT(request: Request) {
       where: { id: Number(id) },
       data,
     });
-    return NextResponse.json(updatedPenalty);
+    return NextResponse.json({
+      success: true,
+      message: "Multa actualizada exitosamente",
+      data: updatedPenalty,
+    });
   } catch (error) {
     return NextResponse.json(
       { error: "Error updating penalty" },

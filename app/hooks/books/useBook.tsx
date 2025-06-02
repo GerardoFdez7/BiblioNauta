@@ -77,7 +77,7 @@ export function useBook(): UseBookResult {
   };
 
   useEffect(() => {
-    getLibros(); // carga todos al inicio
+    getLibros();
   }, []);
 
   return { libros, libro, loading, error, getLibro, getLibros };

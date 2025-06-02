@@ -7,14 +7,15 @@ const prisma = new PrismaClient();
 export async function GET() {
   try {
     const loans = await prisma.prestamo.findMany();
-    return NextResponse.json(loans);
+    return NextResponse.json({ success: true, data: loans });
   } catch (error) {
     return NextResponse.json(
-      { error: "Error fetching loans" },
+      { success: false, message: "Error fetching loans" },
       { status: 500 }
     );
   }
 }
+
 
 // CREATE a new loan
 export async function POST(request: Request) {

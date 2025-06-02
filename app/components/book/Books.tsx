@@ -12,10 +12,11 @@ import {
   TableHeader,
   TableRow,
 } from "@components/ui/table";
-import { Search, Plus, Edit, Trash2 } from "lucide-react";
+import { Search, Edit, Trash2 } from "lucide-react";
 import { useBook } from "@hooks/books/useBook";
 import { useBookDelete } from "@hooks/books/useBookDelete";
 import { BookFormDialog } from "./FormBook";
+import Swal from 'sweetalert2'
 
 export default function BooksTable() {
   const { libros, loading, getLibros } = useBook();
@@ -24,11 +25,22 @@ export default function BooksTable() {
   const [searchTerm, setSearchTerm] = useState("");
 
   //Eliminar
-  const handleDelete = (id: number) => {
-    if (confirm("¿Seguro que deseas eliminar este libro?")) {
-      deleteLibro(id);
+    const handleDelete = async (id: number) => {
+    const result = await Swal.fire({
+      title: '¿Estás seguro?',
+      text: "Esta acción no se puede deshacer",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Sí, eliminar',
+      cancelButtonText: 'Cancelar',
+    })
+  
+    if (result.isConfirmed) {
+      deleteLibro(id)
     }
-  };
+  }
 
   if (loading || deleting) return <p>Cargando...</p>;
 

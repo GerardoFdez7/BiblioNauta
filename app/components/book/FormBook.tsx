@@ -196,8 +196,8 @@ export function BookFormDialog({
               {loading ? "Guardando..." : "Guardar"}
             </Button>
           </DialogFooter>
-          {error && <p className="text-xs text-red-600 mt-2">{error}</p>}
-          {success && <p className="text-sm text-green-600 mt-2">{success}</p>}
+          {error && <p className="pt-5 text-lg text-red-600 mt-2">{error}</p>}
+          {success && <p className="pt-5 text-lg text-green-600 mt-2">{success}</p>}
         </form>
       </DialogContent>
     </Dialog>
