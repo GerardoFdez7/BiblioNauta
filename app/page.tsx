@@ -4,10 +4,13 @@
 import { useState } from "react";
 import Navbar from "./components/ui/navbar";
 import BookIndexTable from "./components/book/Books";
-import LoanHistoryTable from "./components/penalty/Penalty";
-import PenaltyDetails from "./components/views/PenaltyDetails";
+import PenaltyDetails from "./components/penalty/Penalty";
+import LoanHistoryTable from "./components/views/LoanHistory";
+import BookIndex from "./components/views/BookIndex";
+import Component from "@components/views/PenaltyDetails";
 
-type Vista = "libros" | "prestamos" | "multas";
+
+type Vista = "libros" | "prestamos" | "multas" | "indice libros" | "historial multas";
 
 export default function Home() {
   const [vista, setVista] = useState<Vista>("libros");
@@ -17,8 +20,10 @@ export default function Home() {
       <Navbar setVista={setVista} vistaActual={vista} />
       <main className="p-6 space-y-6">
         {vista === "libros" && <BookIndexTable />}
-        {vista === "prestamos" && <LoanHistoryTable />}
         {vista === "multas" && <PenaltyDetails />}
+        {vista === "prestamos" && < LoanHistoryTable/>}
+        {vista === "indice libros" && <BookIndex />}
+        {vista === "historial multas" && <Component />}
       </main>
     </div>
   );

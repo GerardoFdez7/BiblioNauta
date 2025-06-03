@@ -1,6 +1,6 @@
 "use client";
 
-type Vista = "libros" | "prestamos" | "multas";
+type Vista = "libros" | "prestamos" | "multas" | "indice libros" | "historial multas";
 
 interface Props {
   setVista: (vista: Vista) => void;
@@ -21,11 +21,17 @@ export default function Navbar({ setVista, vistaActual }: Props) {
           <span onClick={() => setVista("libros")} className={linkClass("libros")}>
             Libros
           </span>
-          <span onClick={() => setVista("prestamos")} className={linkClass("prestamos")}>
-            Préstamos
-          </span>
           <span onClick={() => setVista("multas")} className={linkClass("multas")}>
             Multas
+          </span>
+          <span onClick={() => setVista("indice libros")} className={linkClass("indice libros")}>
+            Indice Libros
+          </span>
+          <span onClick={() => setVista("prestamos")} className={linkClass("prestamos")}>
+            Historial Préstamos
+          </span>
+          <span onClick={() => setVista("historial multas")} className={linkClass("historial multas")}>
+            Historial Multas
           </span>
         </div>
       </div>
