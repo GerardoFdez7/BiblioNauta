@@ -16,9 +16,18 @@ import { Plus } from "lucide-react";
 import { usePenaltyCreate } from "@hooks/penalty/usePenaltyCreate";
 import { usePenaltyUpdate } from "@hooks/penalty/usePenaltyUpdate";
 
+// Tipado estricto de la multa
+interface Penalty {
+  id: number;
+  monto: number;
+  pagada: boolean;
+  prestamoId: number;
+  usuarioId: number;
+}
+
 interface PenaltyFormDialogProps {
   mode: "create" | "edit";
-  penalty?: any;
+  penalty?: Penalty;
   onFinish: () => void;
   trigger?: React.ReactNode;
 }
@@ -29,26 +38,23 @@ export function FormPenalty({
   onFinish,
   trigger,
 }: PenaltyFormDialogProps) {
+  const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState({
     monto: "",
-    pagada: "",
+    pagada: "false",
     prestamoId: "",
     usuarioId: "",
   });
 
   const [prestamos, setPrestamos] = useState<
-    {
-      id: number;
-      usuarioId: number;
-      ejemplarId: number;
-    }[]
+    { id: number; usuarioId: number; ejemplarId: number }[]
   >([]);
   const [usuarios, setUsuarios] = useState<{ id: number; nombre: string }[]>(
     []
   );
-  const [ejemplares, setEjemplares] = useState<
-    { id: number; codigo: string }[]
-  >([]);
+  const [ejemplares, setEjemplares] = useState<{ id: number; codigo: string }[]>(
+    []
+  );
 
   const {
     createPenalty,
@@ -56,6 +62,7 @@ export function FormPenalty({
     error: createError,
     success: createSuccess,
   } = usePenaltyCreate(onFinish);
+
   const {
     updatePenalty,
     loading: updating,
@@ -67,6 +74,14 @@ export function FormPenalty({
   const error = createError || updateError;
   const success = createSuccess || updateSuccess;
 
+  // Autocierre si éxito
+  useEffect(() => {
+    if (success) {
+      setOpen(false);
+    }
+  }, [success]);
+
+  // Cargar datos en modo edición
   useEffect(() => {
     if (mode === "edit" && penalty) {
       setFormData({
@@ -86,11 +101,30 @@ export function FormPenalty({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validaciones
+    const montoFloat = parseFloat(formData.monto);
+    const prestamoIdInt = parseInt(formData.prestamoId);
+    const usuarioIdInt = parseInt(formData.usuarioId);
+
+    if (!formData.monto || isNaN(montoFloat) || montoFloat <= 0) {
+      alert("El monto debe ser un número mayor a 0.");
+      return;
+    }
+    if (!formData.prestamoId || isNaN(prestamoIdInt)) {
+      alert("Debe seleccionar un préstamo válido.");
+      return;
+    }
+    if (!formData.usuarioId || isNaN(usuarioIdInt)) {
+      alert("Debe seleccionar un usuario válido.");
+      return;
+    }
+
     const payload = {
-      monto: parseFloat(formData.monto),
+      monto: montoFloat,
       pagada: formData.pagada === "true",
-      prestamoId: parseInt(formData.prestamoId),
-      usuarioId: parseInt(formData.usuarioId),
+      prestamoId: prestamoIdInt,
+      usuarioId: usuarioIdInt,
     };
 
     if (mode === "create") {
@@ -100,20 +134,23 @@ export function FormPenalty({
     }
   };
 
+  // Cargar datos para selects
   useEffect(() => {
     fetch("/api/loan")
       .then((res) => res.json())
       .then((json) => json.success && setPrestamos(json.data));
+
     fetch("/api/user")
       .then((res) => res.json())
       .then((json) => json.success && setUsuarios(json.data));
+
     fetch("/api/exemplar")
       .then((res) => res.json())
       .then((json) => json.success && setEjemplares(json.data));
   }, []);
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {trigger || (
           <Button className="flex items-center gap-2">
@@ -122,6 +159,7 @@ export function FormPenalty({
           </Button>
         )}
       </DialogTrigger>
+
       <DialogContent className="sm:max-w-[500px]">
         <form onSubmit={handleSubmit}>
           <DialogHeader>
@@ -143,10 +181,11 @@ export function FormPenalty({
               value={formData.monto}
               onChange={handleChange}
               placeholder="0.00"
-              min="1"
-              step="any"
+              min="0.01"
+              step="0.01"
               required
             />
+
             <Label>Pagada</Label>
             <select
               name="pagada"
@@ -159,7 +198,7 @@ export function FormPenalty({
               <option value="true">Sí</option>
             </select>
 
-            <Label>Prestamo</Label>
+            <Label>Préstamo</Label>
             <select
               name="prestamoId"
               value={formData.prestamoId}
@@ -167,18 +206,19 @@ export function FormPenalty({
               required
               className="border px-3 py-2 rounded-md"
             >
-              <option value="">Seleccione un prestamo</option>
+              <option value="">Seleccione un préstamo</option>
               {prestamos.map((p) => {
                 const ejemplar = ejemplares.find((e) => e.id === p.ejemplarId);
                 return (
                   <option key={p.id} value={p.id}>
                     {ejemplar
-                      ? `Código: ${ejemplar.codigo}`
+                      ? `Código: ${ejemplar.codigo} (Préstamo ID: ${p.id})`
                       : `Préstamo #${p.id}`}
                   </option>
                 );
               })}
             </select>
+
             <Label>Usuario</Label>
             <select
               name="usuarioId"
@@ -206,6 +246,7 @@ export function FormPenalty({
               {loading ? "Guardando..." : "Guardar"}
             </Button>
           </DialogFooter>
+
           {error && <p className="pt-5 text-lg text-red-600 mt-2">{error}</p>}
           {success && (
             <p className="pt-5 text-lg text-green-600 mt-2">{success}</p>
