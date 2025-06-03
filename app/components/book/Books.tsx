@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+
+import React, { useState } from "react";
 import { Button } from "@components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
-import { Input } from "@components/ui/input";
 import {
   Table,
   TableBody,
@@ -12,35 +11,33 @@ import {
   TableHeader,
   TableRow,
 } from "@components/ui/table";
-import { Search, Edit, Trash2 } from "lucide-react";
+import { Edit, Trash2 } from "lucide-react";
 import { useBook } from "@hooks/books/useBook";
 import { useBookDelete } from "@hooks/books/useBookDelete";
 import { BookFormDialog } from "./FormBook";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 export default function BooksTable() {
   const { libros, loading, getLibros } = useBook();
   const { deleteLibro, loading: deleting } = useBookDelete(getLibros);
 
-  const [searchTerm, setSearchTerm] = useState("");
-
   //Eliminar
-    const handleDelete = async (id: number) => {
+  const handleDelete = async (id: number) => {
     const result = await Swal.fire({
-      title: '¿Estás seguro?',
+      title: "¿Estás seguro?",
       text: "Esta acción no se puede deshacer",
-      icon: 'warning',
+      icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: '#d33',
-      cancelButtonColor: '#3085d6',
-      confirmButtonText: 'Sí, eliminar',
-      cancelButtonText: 'Cancelar',
-    })
-  
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Sí, eliminar",
+      cancelButtonText: "Cancelar",
+    });
+
     if (result.isConfirmed) {
-      deleteLibro(id)
+      deleteLibro(id);
     }
-  }
+  };
 
   if (loading || deleting) return <p>Cargando...</p>;
 
@@ -61,19 +58,6 @@ export default function BooksTable() {
           </div>
         </CardHeader>
         <CardContent>
-          {/* Barra de búsqueda usar funcion "fn_buscar_libros_por_editorial" */}
-          <div className="flex items-center space-x-2 mb-6">
-            <div className="relative flex-1">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input
-                placeholder="Buscar por editorial"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-8"
-              />
-            </div>
-          </div>
-
           {/* Tabla de libros */}
           <div className="rounded-md border">
             <Table>
@@ -142,7 +126,7 @@ export default function BooksTable() {
                   <TableRow>
                     <TableCell colSpan={7} className="text-center py-8">
                       <div className="text-muted-foreground">
-                        No se encontraron libros que coincidan con tu búsqueda.
+                        No se encontraron libros registrados.
                       </div>
                     </TableCell>
                   </TableRow>

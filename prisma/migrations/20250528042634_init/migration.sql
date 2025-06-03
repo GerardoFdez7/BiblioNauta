@@ -347,9 +347,9 @@ BEGIN
         L.titulo,
         L.isbn,
         L."anioPublicacion",
-        E.nombre,
-        C.nombre,
-        L."createdAt"
+        E.nombre AS editorial_nombre,
+        C.nombre AS categoria_nombre,
+        L."createdAt" 
     FROM "Libro" L
     JOIN "Editorial" E ON L."editorialId" = E.id
     JOIN "Categoria" C ON L."categoriaId" = C.id
