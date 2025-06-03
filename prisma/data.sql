@@ -510,366 +510,186 @@ INSERT INTO "Empleado" (nombre, puesto, email)
 VALUES ('Mateo Hurtado', 'Coordinador', 'mateo@biblioteca.com');
 
 -- ===== INSERTS PARA LIBRO (180) =====
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cien años de soledad', '1164106880', 1950, 2, 10, '2023-03-30 08:49:23');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Oficio de tinieblas', '0225853205', 1958, 9, 6, '2024-02-16 17:26:53');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La mujer rota', '1105710122', 1961, 2, 7, '2021-06-28 12:13:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Memoria de mis putas tristes', '1697470459', 1951, 9, 7, '2024-11-08 00:55:13');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La tregua', '098950686X', 1959, 9, 7, '2024-12-30 09:17:11');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El reino de este mundo', '1580217427', 1953, 6, 5, '2023-04-07 18:21:37');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los relámpagos de agosto', '1176950398', 2010, 1, 9, '2021-03-02 03:51:05');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Pedro Páramo', '0536880476', 1992, 7, 6, '2022-05-27 07:55:59');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La ley del amor', '0287670023', 1953, 3, 7, '2024-04-19 01:34:05');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Arráncame la vida', '0454660197', 1958, 3, 6, '2020-12-12 18:48:58');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La noche de Tlatelolco', '0160861861', 1980, 2, 1, '2020-08-30 18:58:11');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La tía Julia y el escribidor', '1708565027', 2016, 7, 9, '2023-12-25 04:05:32');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los cachorros', '0531086844', 1989, 3, 5, '2021-08-29 07:17:54');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La forma de las ruinas', '1528581296', 1999, 6, 3, '2023-09-14 06:58:07');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cien años de soledad', '0270577467', 2018, 6, 9, '2020-08-28 01:26:22');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El héroe discreto', '1888258187', 1965, 3, 10, '2023-07-22 17:02:33');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La mujer habitada', '1148335463', 1999, 7, 1, '2020-10-12 22:31:11');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El vampiro de la colonia Roma', '0830349316', 1967, 8, 1, '2023-02-11 05:42:13');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El libro salvaje', '1882827767', 1994, 8, 8, '2020-08-27 22:56:44');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El cojo bueno', '1563829096', 1988, 7, 1, '2024-08-15 13:03:10');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Crónica de una muerte anunciada', '0057565538', 1970, 9, 6, '2024-03-27 09:43:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La sombra de la serpiente', '0260668427', 2016, 9, 9, '2025-03-04 02:42:01');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los pasos perdidos', '1141489503', 1967, 6, 9, '2023-08-27 16:50:59');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La casa de los espíritus', '1417953748', 1963, 9, 6, '2024-02-25 21:06:30');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Marianela', '0789450216', 1978, 10, 6, '2020-08-02 03:07:49');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Queremos tanto a Glenda', '1278078258', 1961, 5, 9, '2023-07-25 03:13:57');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Bestiario', '0789490560', 1981, 4, 6, '2022-05-09 07:44:39');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Arráncame la vida', '1426560907', 1983, 7, 1, '2024-08-22 19:10:58');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Conversación en La Catedral', '0048283479', 2014, 2, 4, '2024-05-23 09:36:26');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Santa', '1811798845', 2014, 4, 1, '2022-01-29 00:54:11');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los premios', '1671096681', 1974, 5, 10, '2023-06-13 18:25:02');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Aura', '1233303317', 1979, 2, 10, '2023-11-07 08:44:40');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Siddhartha', '065800364X', 1990, 2, 6, '2021-12-30 22:09:37');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Las batallas en el desierto', '0453805272', 2020, 9, 3, '2022-05-01 02:39:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La guerra del fin del mundo', '0866836179', 2018, 3, 8, '2020-10-11 14:27:05');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La piel del cielo', '071217589X', 2013, 7, 1, '2020-07-25 09:29:18');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Sobre héroes y tumbas', '1453601813', 1982, 10, 8, '2023-03-07 14:00:02');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La casa grande', '0626272025', 1993, 7, 4, '2021-02-24 09:51:17');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Morirás lejos', '0123763606', 2014, 3, 10, '2020-11-23 09:36:10');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cartucho', '0712057331', 1950, 10, 10, '2022-06-01 19:09:26');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El entenado', '1210456532', 2013, 6, 10, '2020-12-07 09:32:11');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Del amor y otros demonios', '0134328094', 1965, 1, 6, '2025-01-13 17:25:02');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Las armas secretas', '1855260948', 2008, 6, 7, '2023-05-24 05:28:10');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La fiesta del chivo', '0580416291', 1990, 6, 4, '2023-03-09 23:48:19');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El llano en llamas', '0983613354', 2007, 6, 4, '2024-01-20 01:28:55');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La ley del amor', '1882604024', 1973, 7, 1, '2022-01-20 21:17:17');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Demian', '0129141151', 2003, 7, 9, '2020-11-24 16:16:04');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ficciones', '1246194880', 1983, 3, 9, '2021-06-07 03:50:13');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Papeles inesperados', '1447301196', 1998, 6, 2, '2021-04-10 19:58:15');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ternura', '1522606335', 1987, 2, 5, '2020-06-14 12:58:36');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Santa', '0128462647', 2014, 10, 6, '2020-12-19 23:02:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El Aleph', '0964908344', 1957, 7, 1, '2023-01-24 18:28:57');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La región más transparente', '0244363706', 1999, 5, 2, '2024-01-05 14:48:37');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Arráncame la vida', '0208317937', 2009, 10, 6, '2023-10-29 06:07:14');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La muerte de Artemio Cruz', '1131708407', 1981, 8, 5, '2022-03-10 05:19:54');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La sombra de la serpiente', '0810679655', 2006, 10, 10, '2021-12-20 02:06:36');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Balún Canán', '1110322941', 1994, 4, 8, '2023-07-09 15:08:39');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Deshoras', '1462888100', 2014, 10, 5, '2025-05-09 08:08:22');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Un viejo que leía novelas de amor', '0738705470', 1993, 1, 3, '2023-08-05 14:39:31');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ensayo sobre la ceguera', '1320509177', 1965, 1, 7, '2023-08-02 10:22:52');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los heraldos negros', '0191396281', 2013, 3, 8, '2021-04-06 04:39:57');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La casa grande', '0875596452', 2018, 1, 8, '2024-07-04 08:00:16');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La casa grande', '0108250229', 2019, 3, 6, '2021-11-02 20:43:37');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El hablador', '0838278078', 1997, 4, 10, '2021-09-28 05:09:42');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('62: Modelo para armar', '1873167652', 1954, 8, 9, '2020-10-26 03:52:58');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Malinche', '1157701051', 1986, 10, 1, '2023-07-10 16:59:48');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El túnel', '0887953026', 1991, 7, 4, '2021-06-29 19:37:01');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La invención de Morel', '0760524580', 1958, 5, 5, '2023-01-22 18:20:24');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El palacio de la medianoche', '1301828092', 1971, 7, 6, '2024-07-20 10:12:47');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Lituma en los Andes', '1713253569', 2004, 1, 10, '2024-07-27 08:50:15');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La autopista del sur', '1158613415', 1951, 8, 3, '2021-06-12 08:31:32');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El pez en el agua', '0311676707', 1975, 1, 5, '2023-12-11 10:05:09');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Las batallas en el desierto', '0486655512', 2017, 3, 9, '2023-04-02 05:11:02');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los recuerdos del porvenir', '007685034X', 1974, 5, 8, '2023-02-08 06:50:28');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El amor en los tiempos del cólera', '0597538093', 2009, 4, 5, '2024-06-03 07:49:37');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Travesuras de la niña mala', '0537834230', 2017, 2, 2, '2024-05-11 11:08:33');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Como agua para chocolate', '1777464161', 2006, 10, 9, '2024-05-19 00:56:05');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Pantaleón y las visitadoras', '1699982309', 2021, 5, 4, '2021-10-14 12:20:23');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los funerales de la Mamá Grande', '1949342832', 2016, 2, 7, '2023-12-19 14:16:50');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Las batallas en el desierto', '1815722592', 2002, 8, 2, '2021-07-05 01:15:43');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los de abajo', '1622749391', 1957, 10, 7, '2022-01-31 18:59:30');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Rayuela', '0990439704', 2005, 9, 6, '2021-12-15 07:45:51');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Doña Bárbara', '1925013057', 1969, 8, 3, '2022-04-01 21:06:45');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El señor presidente', '076218809X', 1974, 4, 4, '2022-06-07 17:51:09');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Palinuro de México', '1234272954', 1954, 4, 4, '2023-10-26 10:37:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los detectives salvajes', '1466929235', 1959, 7, 1, '2022-05-13 04:57:05');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La invención de Morel', '1829328239', 1951, 7, 6, '2024-08-28 09:45:27');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Las genealogías', '042076383X', 2020, 1, 1, '2024-02-02 19:51:35');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Noticias del imperio', '1484432932', 1981, 7, 5, '2022-01-12 23:56:08');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cien años de soledad', '068471275X', 1973, 5, 2, '2024-09-16 11:44:21');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La ciudad y los perros', '1841702455', 1986, 6, 4, '2021-07-01 14:48:22');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Oficio de tinieblas', '141775513X', 2015, 1, 6, '2023-06-19 19:35:04');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Final del juego', '1981105573', 1969, 8, 4, '2024-03-22 09:28:10');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El Aleph', '0232537283', 2003, 4, 9, '2022-06-28 21:12:29');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El jardín de al lado', '1624956866', 2005, 7, 9, '2020-06-18 20:23:05');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La sombra del viento', '1393295797', 1974, 7, 2, '2023-02-21 11:18:24');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Marianela', '1570304246', 2013, 1, 5, '2021-12-19 18:41:23');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La perla', '0238224686', 1967, 8, 2, '2024-06-14 05:07:47');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El amor en los tiempos del cólera', '1964521378', 1966, 2, 8, '2022-12-27 02:13:36');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Palinuro de México', '1264787901', 1995, 9, 10, '2020-11-20 07:34:58');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El cojo bueno', '0763187097', 1998, 3, 10, '2023-08-05 13:50:06');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El pez en el agua', '0301188874', 1991, 8, 2, '2024-12-27 07:23:17');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Morirás lejos', '1356389333', 2018, 4, 7, '2020-09-17 17:33:28');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cartucho', '1474286526', 1959, 4, 4, '2022-07-09 11:42:14');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La región más transparente', '0535197004', 1995, 7, 8, '2023-07-25 15:18:34');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El reino de este mundo', '1512346373', 1986, 9, 9, '2023-01-21 04:33:21');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La mujer habitada', '1479475890', 1970, 7, 1, '2023-07-16 21:30:22');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cien años de soledad', '1781226059', 1983, 1, 3, '2023-10-06 10:42:26');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La invención de Morel', '0350332924', 1974, 6, 3, '2022-08-24 13:45:25');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El héroe discreto', '1298663016', 1962, 3, 10, '2022-05-07 13:20:52');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Sobre héroes y tumbas', '0075536684', 1962, 5, 2, '2020-12-18 16:31:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Bestiario', '1296253589', 1959, 6, 1, '2025-05-20 14:20:25');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La muerte de Artemio Cruz', '0657107093', 1982, 6, 3, '2020-11-25 10:11:15');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ficciones', '0212534335', 1982, 7, 2, '2022-07-06 11:55:47');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Lituma en los Andes', '0018375820', 1983, 9, 9, '2021-10-26 05:08:28');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La mujer habitada', '1993161716', 1965, 9, 2, '2023-05-27 20:21:00');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ensayo sobre la ceguera', '0798382333', 1992, 5, 5, '2022-07-03 05:39:36');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La noche de Tlatelolco', '049413304X', 2006, 4, 1, '2023-08-03 01:50:45');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Doña Bárbara', '0384014186', 1961, 2, 10, '2024-10-22 18:36:42');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Travesuras de la niña mala', '0557938678', 1962, 8, 7, '2020-09-29 13:18:06');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Santa', '0117638803', 1995, 3, 3, '2025-02-02 05:27:58');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La sombra del viento', '1229299440', 1999, 1, 7, '2020-12-13 21:40:42');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Marianela', '0148146759', 1976, 4, 1, '2021-06-17 20:39:35');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El Aleph', '1298994888', 2003, 3, 2, '2023-03-08 17:13:58');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Palinuro de México', '1233751174', 1972, 9, 5, '2022-07-12 00:13:34');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El amor en los tiempos del cólera', '136458848X', 2003, 3, 7, '2025-01-31 22:52:57');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Sobre héroes y tumbas', '0722762712', 1989, 2, 1, '2022-10-01 01:37:16');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El señor presidente', '0119945258', 1965, 10, 7, '2024-02-19 01:11:43');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Memoria de mis putas tristes', '0390865605', 1984, 10, 1, '2022-08-24 01:22:02');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El libro salvaje', '1783713321', 2019, 4, 5, '2024-10-09 17:44:15');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El jardín de al lado', '052416536X', 1989, 10, 9, '2024-03-26 21:42:09');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La fiesta del chivo', '0489037623', 1993, 1, 3, '2022-12-08 11:25:38');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La piel del cielo', '1037300548', 1989, 5, 4, '2021-08-17 17:31:44');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Crónica de una muerte anunciada', '0372082122', 2004, 4, 8, '2021-12-06 12:28:43');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Crónica de una muerte anunciada', '0137788525', 1955, 7, 2, '2024-01-02 08:25:08');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La tregua', '0094369585', 1969, 3, 1, '2025-04-26 21:38:50');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Aura', '0234270624', 2020, 4, 2, '2023-01-31 13:19:03');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La guerra del fin del mundo', '142139751X', 2007, 10, 4, '2022-02-27 05:58:48');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El Aleph', '0347609775', 2001, 10, 7, '2022-04-21 09:01:52');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Santa', '1198965134', 2018, 6, 2, '2022-02-05 08:35:49');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los detectives salvajes', '0883246422', 1977, 2, 8, '2025-05-22 09:29:56');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Morirás lejos', '0484610562', 1955, 9, 5, '2023-11-17 09:34:01');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El cojo bueno', '1776221613', 1953, 4, 1, '2023-07-04 03:59:06');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Lituma en los Andes', '006291345X', 1969, 9, 2, '2022-09-05 06:37:51');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La forma de las ruinas', '1828780448', 1956, 7, 8, '2022-11-01 02:24:59');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La forma de las ruinas', '0180514180', 1999, 6, 3, '2022-04-07 16:21:23');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El jardín de al lado', '1802445862', 2001, 7, 2, '2022-09-25 14:58:30');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Las batallas en el desierto', '0397630247', 1961, 1, 4, '2023-12-14 01:11:00');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El señor presidente', '0548037256', 1969, 3, 10, '2023-06-12 03:14:56');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El túnel', '1859019250', 1988, 6, 9, '2022-07-31 14:57:34');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los de abajo', '1374889350', 2003, 5, 5, '2024-08-11 07:15:45');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La muerte de Artemio Cruz', '1577099168', 2002, 3, 9, '2025-02-18 00:11:44');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La piel del cielo', '1714411273', 2017, 9, 2, '2023-06-16 08:03:20');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El vampiro de la colonia Roma', '1135161607', 1950, 10, 10, '2024-02-28 01:14:14');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Del amor y otros demonios', '0038220083', 1968, 9, 10, '2021-10-03 22:44:33');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ternura', '0508376521', 1962, 8, 4, '2023-02-26 03:15:25');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La ciudad y los perros', '0638149185', 2020, 8, 1, '2020-12-26 14:44:03');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Aura', '0527867004', 1997, 5, 8, '2022-05-11 20:51:31');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La perla', '0063381494', 1997, 5, 9, '2020-11-17 18:46:47');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Cartucho', '1877412678', 2022, 10, 6, '2022-05-30 20:01:52');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Doña Bárbara', '1583655255', 1975, 3, 1, '2021-04-15 13:49:31');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La casa grande', '1178485579', 1997, 1, 10, '2025-03-24 11:56:39');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La sombra del viento', '1026667844', 1962, 8, 6, '2023-01-15 17:56:27');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La autopista del sur', '1397561459', 2003, 3, 2, '2022-06-09 17:29:54');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Papeles inesperados', '0385960727', 1959, 4, 10, '2024-03-24 20:09:47');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los heraldos negros', '0070416826', 1999, 3, 9, '2023-03-11 19:49:43');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Como agua para chocolate', '1212915585', 1962, 8, 9, '2022-01-18 13:19:26');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La noche de Tlatelolco', '1438144261', 1979, 9, 8, '2022-09-24 04:18:53');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La casa grande', '0139703268', 1992, 6, 10, '2020-12-20 00:17:21');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los relámpagos de agosto', '1140083252', 2003, 5, 6, '2025-03-08 09:10:10');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los relámpagos de agosto', '1595697489', 2011, 3, 4, '2021-01-01 07:52:37');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Queremos tanto a Glenda', '1403462550', 1963, 1, 9, '2023-08-16 10:46:16');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El amor en los tiempos del cólera', '0295436786', 1968, 6, 1, '2022-08-01 22:05:50');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('La autopista del sur', '1583050272', 1967, 3, 3, '2020-10-15 11:06:06');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Los de abajo', '0123372135', 2001, 3, 9, '2024-12-21 22:01:01');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('El vampiro de la colonia Roma', '0982216939', 1981, 9, 3, '2022-02-05 11:46:59');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Noticias del imperio', '0017531969', 2012, 9, 1, '2023-12-17 09:58:33');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Conversación en La Catedral', '1900084988', 2010, 3, 5, '2024-07-07 20:42:02');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Papeles inesperados', '079856055X', 1994, 9, 8, '2022-06-18 14:16:11');
-INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") 
-VALUES ('Ficciones', '1852060271', 1978, 2, 7, '2020-06-30 00:18:42');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cien años de soledad', '116-410-6880', 1950, 2, 10, '2023-03-30 08:49:23');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Oficio de tinieblas', '022-585-3205', 1958, 9, 6, '2024-02-16 17:26:53');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La mujer rota', '110-571-0122', 1961, 2, 7, '2021-06-28 12:13:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Memoria de mis putas tristes', '169-747-0459', 1951, 9, 7, '2024-11-08 00:55:13');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La tregua', '098-950-6868', 1959, 9, 7, '2024-12-30 09:17:11');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El reino de este mundo', '158-021-7427', 1953, 6, 5, '2023-04-07 18:21:37');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los relámpagos de agosto', '117-695-0398', 2010, 1, 9, '2021-03-02 03:51:05');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Pedro Páramo', '053-688-0476', 1992, 7, 6, '2022-05-27 07:55:59');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La ley del amor', '028-767-0023', 1953, 3, 7, '2024-04-19 01:34:05');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Arráncame la vida', '045-466-0197', 1958, 3, 6, '2020-12-12 18:48:58');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La noche de Tlatelolco', '016-086-1861', 1980, 2, 1, '2020-08-30 18:58:11');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La tía Julia y el escribidor', '170-856-5027', 2016, 7, 9, '2023-12-25 04:05:32');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los cachorros', '053-108-6844', 1989, 3, 5, '2021-08-29 07:17:54');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La forma de las ruinas', '152-858-1296', 1999, 6, 3, '2023-09-14 06:58:07');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cien años de soledad', '027-057-7467', 2018, 6, 9, '2020-08-28 01:26:22');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El héroe discreto', '188-825-8187', 1965, 3, 10, '2023-07-22 17:02:33');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La mujer habitada', '114-833-5463', 1999, 7, 1, '2020-10-12 22:31:11');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El vampiro de la colonia Roma', '083-034-9316', 1967, 8, 1, '2023-02-11 05:42:13');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El libro salvaje', '188-282-7767', 1994, 8, 8, '2020-08-27 22:56:44');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El cojo bueno', '156-382-9096', 1988, 7, 1, '2024-08-15 13:03:10');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Crónica de una muerte anunciada', '005-756-5538', 1970, 9, 6, '2024-03-27 09:43:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La sombra de la serpiente', '026-066-8427', 2016, 9, 9, '2025-03-04 02:42:01');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los pasos perdidos', '114-148-9503', 1967, 6, 9, '2023-08-27 16:50:59');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La casa de los espíritus', '141-795-3748', 1963, 9, 6, '2024-02-25 21:06:30');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Marianela', '078-945-0216', 1978, 10, 6, '2020-08-02 03:07:49');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Queremos tanto a Glenda', '127-807-8258', 1961, 5, 9, '2023-07-25 03:13:57');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Bestiario', '078-949-0560', 1981, 4, 6, '2022-05-09 07:44:39');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Arráncame la vida', '142-656-0907', 1983, 7, 1, '2024-08-22 19:10:58');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Conversación en La Catedral', '004-828-3479', 2014, 2, 4, '2024-05-23 09:36:26');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Santa', '181-179-8845', 2014, 4, 1, '2022-01-29 00:54:11');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los premios', '167-109-6681', 1974, 5, 10, '2023-06-13 18:25:02');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Aura', '123-330-3317', 1979, 2, 10, '2023-11-07 08:44:40');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Siddhartha', '065-800-3648', 1990, 2, 6, '2021-12-30 22:09:37');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Las batallas en el desierto', '045-380-5272', 2020, 9, 3, '2022-05-01 02:39:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La guerra del fin del mundo', '086-683-6179', 2018, 3, 8, '2020-10-11 14:27:05');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La piel del cielo', '071-217-5898', 2013, 7, 1, '2020-07-25 09:29:18');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Sobre héroes y tumbas', '145-360-1813', 1982, 10, 8, '2023-03-07 14:00:02');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La casa grande', '062-627-2025', 1993, 7, 4, '2021-02-24 09:51:17');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Morirás lejos', '012-376-3606', 2014, 3, 10, '2020-11-23 09:36:10');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cartucho', '071-205-7331', 1950, 10, 10, '2022-06-01 19:09:26');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El entenado', '121-045-6532', 2013, 6, 10, '2020-12-07 09:32:11');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Del amor y otros demonios', '013-432-8094', 1965, 1, 6, '2025-01-13 17:25:02');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Las armas secretas', '185-526-0948', 2008, 6, 7, '2023-05-24 05:28:10');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La fiesta del chivo', '058-041-6291', 1990, 6, 4, '2023-03-09 23:48:19');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El llano en llamas', '098-361-3354', 2007, 6, 4, '2024-01-20 01:28:55');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La ley del amor', '188-260-4024', 1973, 7, 1, '2022-01-20 21:17:17');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Demian', '012-914-1151', 2003, 7, 9, '2020-11-24 16:16:04');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ficciones', '124-619-4880', 1983, 3, 9, '2021-06-07 03:50:13');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Papeles inesperados', '144-730-1196', 1998, 6, 2, '2021-04-10 19:58:15');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ternura', '152-260-6335', 1987, 2, 5, '2020-06-14 12:58:36');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Santa', '012-846-2647', 2014, 10, 6, '2020-12-19 23:02:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El Aleph', '096-490-8344', 1957, 7, 1, '2023-01-24 18:28:57');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La región más transparente', '024-436-3706', 1999, 5, 2, '2024-01-05 14:48:37');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Arráncame la vida', '020-831-7937', 2009, 10, 6, '2023-10-29 06:07:14');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La muerte de Artemio Cruz', '113-170-8407', 1981, 8, 5, '2022-03-10 05:19:54');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La sombra de la serpiente', '081-067-9655', 2006, 10, 10, '2021-12-20 02:06:36');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Balún Canán', '111-032-2941', 1994, 4, 8, '2023-07-09 15:08:39');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Deshoras', '146-288-8100', 2014, 10, 5, '2025-05-09 08:08:22');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Un viejo que leía novelas de amor', '073-870-5470', 1993, 1, 3, '2023-08-05 14:39:31');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ensayo sobre la ceguera', '132-050-9177', 1965, 1, 7, '2023-08-02 10:22:52');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los heraldos negros', '019-139-6281', 2013, 3, 8, '2021-04-06 04:39:57');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La casa grande', '087-559-6452', 2018, 1, 8, '2024-07-04 08:00:16');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La casa grande', '010-825-0229', 2019, 3, 6, '2021-11-02 20:43:37');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El hablador', '083-827-8078', 1997, 4, 10, '2021-09-28 05:09:42');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('62: Modelo para armar', '187-316-7652', 1954, 8, 9, '2020-10-26 03:52:58');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Malinche', '115-770-1051', 1986, 10, 1, '2023-07-10 16:59:48');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El túnel', '088-795-3026', 1991, 7, 4, '2021-06-29 19:37:01');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La invención de Morel', '076-052-4580', 1958, 5, 5, '2023-01-22 18:20:24');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El palacio de la medianoche', '130-182-8092', 1971, 7, 6, '2024-07-20 10:12:47');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Lituma en los Andes', '171-325-3569', 2004, 1, 10, '2024-07-27 08:50:15');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La autopista del sur', '115-861-3415', 1951, 8, 3, '2021-06-12 08:31:32');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El pez en el agua', '031-167-6707', 1975, 1, 5, '2023-12-11 10:05:09');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Las batallas en el desierto', '048-665-5512', 2017, 3, 9, '2023-04-02 05:11:02');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los recuerdos del porvenir', '007-685-0342', 1974, 5, 8, '2023-02-08 06:50:28');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El amor en los tiempos del cólera', '059-753-8093', 2009, 4, 5, '2024-06-03 07:49:37');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Travesuras de la niña mala', '053-783-4230', 2017, 2, 2, '2024-05-11 11:08:33');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Como agua para chocolate', '177-746-4161', 2006, 10, 9, '2024-05-19 00:56:05');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Pantaleón y las visitadoras', '169-998-2309', 2021, 5, 4, '2021-10-14 12:20:23');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los funerales de la Mamá Grande', '194-934-2832', 2016, 2, 7, '2023-12-19 14:16:50');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Las batallas en el desierto', '181-572-2592', 2002, 8, 2, '2021-07-05 01:15:43');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los de abajo', '162-274-9391', 1957, 10, 7, '2022-01-31 18:59:30');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Rayuela', '099-043-9704', 2005, 9, 6, '2021-12-15 07:45:51');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Doña Bárbara', '192-501-3057', 1969, 8, 3, '2022-04-01 21:06:45');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El señor presidente', '076-218-8099', 1974, 4, 4, '2022-06-07 17:51:09');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Palinuro de México', '123-427-2954', 1954, 4, 4, '2023-10-26 10:37:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los detectives salvajes', '146-692-9235', 1959, 7, 1, '2022-05-13 04:57:05');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La invención de Morel', '182-932-8239', 1951, 7, 6, '2024-08-28 09:45:27');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Las genealogías', '042-076-3183', 2020, 1, 1, '2024-02-02 19:51:35');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Noticias del imperio', '148-443-2932', 1981, 7, 5, '2022-01-12 23:56:08');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cien años de soledad', '068-471-8275', 1973, 5, 2, '2024-09-16 11:44:21');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La ciudad y los perros', '184-170-2455', 1986, 6, 4, '2021-07-01 14:48:22');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Oficio de tinieblas', '141-775-5136', 2015, 1, 6, '2023-06-19 19:35:04');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Final del juego', '198-110-5573', 1969, 8, 4, '2024-03-22 09:28:10');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El Aleph', '023-253-7283', 2003, 4, 9, '2022-06-28 21:12:29');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El jardín de al lado', '162-495-6866', 2005, 7, 9, '2020-06-18 20:23:05');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La sombra del viento', '139-329-5797', 1974, 7, 2, '2023-02-21 11:18:24');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Marianela', '157-030-4246', 2013, 1, 5, '2021-12-19 18:41:23');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La perla', '023-822-4686', 1967, 8, 2, '2024-06-14 05:07:47');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El amor en los tiempos del cólera', '196-452-1378', 1966, 2, 8, '2022-12-27 02:13:36');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Palinuro de México', '126-478-7901', 1995, 9, 10, '2020-11-20 07:34:58');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El cojo bueno', '076-318-7097', 1998, 3, 10, '2023-08-05 13:50:06');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El pez en el agua', '030-118-8874', 1991, 8, 2, '2024-12-27 07:23:17');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Morirás lejos', '135-638-9333', 2018, 4, 7, '2020-09-17 17:33:28');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cartucho', '147-428-6526', 1959, 4, 4, '2022-07-09 11:42:14');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La región más transparente', '053-519-7004', 1995, 7, 8, '2023-07-25 15:18:34');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El reino de este mundo', '151-234-6373', 1986, 9, 9, '2023-01-21 04:33:21');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La mujer habitada', '147-947-5890', 1970, 7, 1, '2023-07-16 21:30:22');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cien años de soledad', '178-122-6059', 1983, 1, 3, '2023-10-06 10:42:26');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La invención de Morel', '035-033-2924', 1974, 6, 3, '2022-08-24 13:45:25');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El héroe discreto', '129-866-3016', 1962, 3, 10, '2022-05-07 13:20:52');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Sobre héroes y tumbas', '007-553-6684', 1962, 5, 2, '2020-12-18 16:31:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Bestiario', '129-625-3589', 1959, 6, 1, '2025-05-20 14:20:25');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La muerte de Artemio Cruz', '065-710-7093', 1982, 6, 3, '2020-11-25 10:11:15');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ficciones', '021-253-4335', 1982, 7, 2, '2022-07-06 11:55:47');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Lituma en los Andes', '001-837-5820', 1983, 9, 9, '2021-10-26 05:08:28');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La mujer habitada', '199-316-1716', 1965, 9, 2, '2023-05-27 20:21:00');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ensayo sobre la ceguera', '079-838-2333', 1992, 5, 5, '2022-07-03 05:39:36');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La noche de Tlatelolco', '049-413-3047', 2006, 4, 1, '2023-08-03 01:50:45');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Doña Bárbara', '038-401-4186', 1961, 2, 10, '2024-10-22 18:36:42');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Travesuras de la niña mala', '055-793-8678', 1962, 8, 7, '2020-09-29 13:18:06');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Santa', '011-763-8803', 1995, 3, 3, '2025-02-02 05:27:58');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La sombra del viento', '122-929-9440', 1999, 1, 7, '2020-12-13 21:40:42');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Marianela', '014-814-6759', 1976, 4, 1, '2021-06-17 20:39:35');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El Aleph', '129-899-4888', 2003, 3, 2, '2023-03-08 17:13:58');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Palinuro de México', '123-375-1174', 1972, 9, 5, '2022-07-12 00:13:34');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El amor en los tiempos del cólera', '136-458-8488', 2003, 3, 7, '2025-01-31 22:52:57');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Sobre héroes y tumbas', '072-276-2712', 1989, 2, 1, '2022-10-01 01:37:16');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El señor presidente', '011-994-5258', 1965, 10, 7, '2024-02-19 01:11:43');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Memoria de mis putas tristes', '039-086-5605', 1984, 10, 1, '2022-08-24 01:22:02');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El libro salvaje', '178-371-3321', 2019, 4, 5, '2024-10-09 17:44:15');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El jardín de al lado', '052-416-5368', 1989, 10, 9, '2024-03-26 21:42:09');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La fiesta del chivo', '048-903-7623', 1993, 1, 3, '2022-12-08 11:25:38');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La piel del cielo', '103-730-0548', 1989, 5, 4, '2021-08-17 17:31:44');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Crónica de una muerte anunciada', '037-208-2122', 2004, 4, 8, '2021-12-06 12:28:43');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Crónica de una muerte anunciada', '013-778-8525', 1955, 7, 2, '2024-01-02 08:25:08');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La tregua', '009-436-9585', 1969, 3, 1, '2025-04-26 21:38:50');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Aura', '023-427-0624', 2020, 4, 2, '2023-01-31 13:19:03');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La guerra del fin del mundo', '142-139-7515', 2007, 10, 4, '2022-02-27 05:58:48');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El Aleph', '034-760-9775', 2001, 10, 7, '2022-04-21 09:01:52');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Santa', '119-896-5134', 2018, 6, 2, '2022-02-05 08:35:49');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los detectives salvajes', '088-324-6422', 1977, 2, 8, '2025-05-22 09:29:56');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Morirás lejos', '048-461-0562', 1955, 9, 5, '2023-11-17 09:34:01');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El cojo bueno', '177-622-1613', 1953, 4, 1, '2023-07-04 03:59:06');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Lituma en los Andes', '006-291-3457', 1969, 9, 2, '2022-09-05 06:37:51');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La forma de las ruinas', '182-878-0448', 1956, 7, 8, '2022-11-01 02:24:59');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La forma de las ruinas', '018-051-4180', 1999, 6, 3, '2022-04-07 16:21:23');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El jardín de al lado', '180-244-5862', 2001, 7, 2, '2022-09-25 14:58:30');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Las batallas en el desierto', '039-763-0247', 1961, 1, 4, '2023-12-14 01:11:00');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El señor presidente', '054-803-7256', 1969, 3, 10, '2023-06-12 03:14:56');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El túnel', '185-901-9250', 1988, 6, 9, '2022-07-31 14:57:34');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los de abajo', '137-488-9350', 2003, 5, 5, '2024-08-11 07:15:45');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La muerte de Artemio Cruz', '157-709-9168', 2002, 3, 9, '2025-02-18 00:11:44');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La piel del cielo', '171-441-1273', 2017, 9, 2, '2023-06-16 08:03:20');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El vampiro de la colonia Roma', '113-516-1607', 1950, 10, 10, '2024-02-28 01:14:14');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Del amor y otros demonios', '003-822-0083', 1968, 9, 10, '2021-10-03 22:44:33');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ternura', '050-837-6521', 1962, 8, 4, '2023-02-26 03:15:25');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La ciudad y los perros', '063-814-9185', 2020, 8, 1, '2020-12-26 14:44:03');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Aura', '052-786-7004', 1997, 5, 8, '2022-05-11 20:51:31');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La perla', '006-338-1494', 1997, 5, 9, '2020-11-17 18:46:47');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Cartucho', '187-741-2678', 2022, 10, 6, '2022-05-30 20:01:52');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Doña Bárbara', '158-365-5255', 1975, 3, 1, '2021-04-15 13:49:31');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La casa grande', '117-848-5579', 1997, 1, 10, '2025-03-24 11:56:39');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La sombra del viento', '102-666-7844', 1962, 8, 6, '2023-01-15 17:56:27');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La autopista del sur', '139-756-1459', 2003, 3, 2, '2022-06-09 17:29:54');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Papeles inesperados', '038-596-0727', 1959, 4, 10, '2024-03-24 20:09:47');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los heraldos negros', '007-041-6826', 1999, 3, 9, '2023-03-11 19:49:43');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Como agua para chocolate', '121-291-5585', 1962, 8, 9, '2022-01-18 13:19:26');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La noche de Tlatelolco', '143-814-4261', 1979, 9, 8, '2022-09-24 04:18:53');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La casa grande', '013-970-3268', 1992, 6, 10, '2020-12-20 00:17:21');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los relámpagos de agosto', '114-008-3252', 2003, 5, 6, '2025-03-08 09:10:10');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los relámpagos de agosto', '159-569-7489', 2011, 3, 4, '2021-01-01 07:52:37');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Queremos tanto a Glenda', '140-346-2550', 1963, 1, 9, '2023-08-16 10:46:16');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El amor en los tiempos del cólera', '029-543-6786', 1968, 6, 1, '2022-08-01 22:05:50');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('La autopista del sur', '158-305-0272', 1967, 3, 3, '2020-10-15 11:06:06');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Los de abajo', '012-337-2135', 2001, 3, 9, '2024-12-21 22:01:01');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('El vampiro de la colonia Roma', '098-221-6939', 1981, 9, 3, '2022-02-05 11:46:59');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Noticias del imperio', '001-753-1969', 2012, 9, 1, '2023-12-17 09:58:33');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Conversación en La Catedral', '190-008-4988', 2010, 3, 5, '2024-07-07 20:42:02');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Papeles inesperados', '079-856-0558', 1994, 9, 8, '2022-06-18 14:16:11');
+INSERT INTO "Libro" (titulo, isbn, "anioPublicacion", "editorialId", "categoriaId", "createdAt") VALUES ('Ficciones', '185-206-0271', 1978, 2, 7, '2020-06-30 00:18:42');
 
 -- ===== INSERTS PARA LIBROAUTOR (180) =====
 DO $$

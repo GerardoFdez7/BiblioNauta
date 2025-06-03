@@ -66,7 +66,9 @@ export function BookFormDialog({
       setFormData({
         titulo: book.titulo,
         isbn: book.isbn,
-        anioPublicacion: book.anioPublicacion.toString(),
+        anioPublicacion: new Date(book.anioPublicacion)
+          .toISOString()
+          .split("T")[0],
         editorialId: book.editorialId.toString(),
         categoriaId: book.categoriaId.toString(),
       });
@@ -81,10 +83,40 @@ export function BookFormDialog({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const isbnRegex = /^\d{3}-\d{3}-\d{4}$/;
+    if (!isbnRegex.test(formData.isbn)) {
+      alert("El ISBN debe tener el formato correcto (ej: 123-456-7890).");
+      return;
+    }
+
+    if (!formData.anioPublicacion) {
+      alert("Por favor, seleccione una fecha de publicación.");
+      return;
+    }
+
+    const year = new Date(formData.anioPublicacion).getFullYear();
+    const currentYear = new Date().getFullYear();
+
+    if (year >= currentYear) {
+      alert("El año de publicación debe ser anterior al año actual.");
+      return;
+    }
+
+    if (
+      !formData.titulo.trim() ||
+      !formData.isbn.trim() ||
+      !formData.editorialId ||
+      !formData.categoriaId
+    ) {
+      alert("Por favor, complete todos los campos.");
+      return;
+    }
+
     const payload = {
       titulo: formData.titulo,
       isbn: formData.isbn,
-      anioPublicacion: parseInt(formData.anioPublicacion),
+      anioPublicacion: year,
       editorialId: parseInt(formData.editorialId),
       categoriaId: parseInt(formData.categoriaId),
     };
@@ -129,7 +161,7 @@ export function BookFormDialog({
           </DialogHeader>
 
           <div className="grid gap-4 py-4">
-            <Label>Titulo</Label>
+            <Label>Título</Label>
             <Input
               name="titulo"
               value={formData.titulo}
@@ -142,16 +174,15 @@ export function BookFormDialog({
               name="isbn"
               value={formData.isbn}
               onChange={handleChange}
-              placeholder="000-000-000"
+              placeholder="000-000-0000"
               required
             />
-            <Label>Año de publicación</Label>
+            <Label>Fecha de publicación</Label>
             <Input
               name="anioPublicacion"
-              type="number"
+              type="date"
               value={formData.anioPublicacion}
               onChange={handleChange}
-              placeholder="YYYY"
               required
             />
             <Label>Editorial</Label>
