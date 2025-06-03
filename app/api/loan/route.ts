@@ -6,7 +6,11 @@ const prisma = new PrismaClient();
 // GET all loans
 export async function GET() {
   try {
-    const loans = await prisma.prestamo.findMany();
+    const loans = await prisma.prestamo.findMany({
+      where: {
+        multa: null
+      }
+    });
     return NextResponse.json({ success: true, data: loans });
   } catch (error) {
     return NextResponse.json(
